@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilizacao2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>menu</title>
+
+    <script>
+        function mostrarDescricao() {
+            var portfolio = document.getElementById("portfolio");
+            portfolio.innerText = "Portfolio Profissional";
+        }
+
+        function resetarDescricao() {
+            var portfolio = document.getElementById("portfolio");
+            portfolio.innerText = "Portfolio";
+        }
+    </script>
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <p id="portfolio" class="portfolio" onmouseover="mostrarDescricao()" onmouseout="resetarDescricao()">
+                Portfolio</p>
+
+            <ul class="menu clickable">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projeto.html">Projetos</a></li>
+            </ul>
+        </header>
+        <section class="permitedivisaoemdois">
+            <div class="projeto1">
+                <a href="https://github.com/Luciana0001">
+                    <img src="img/teste.png">
+                    <button class="projeto-btn">Primeiro Projeto</button>
+                </a>
+            </div>
+
+            <div class="projeto2">
+                <img src="img/projeto.png">
+                <button class="projeto-btn">Aguarde Novidades + Projetos</button>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
